@@ -26,7 +26,7 @@ var (
 	mutex         sync.Mutex
 )
 
-func genGBID(machineID int16) (int64, error) {
+func GenGBID(machineID int16) (int64, error) {
 	if machineID > MACHINE_BITS {
 		return 0, errors.New("machineID exceed max value:1023")
 	}
